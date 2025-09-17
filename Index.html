@@ -1,71 +1,111 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Moriyah GV Gás</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-  <style>
-    /* Estilos conforme anteriores */
-  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Moriyah GV Gás</title>
+<style>
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f0f8ff;
+  color: #333;
+  text-align: center;
+}
+header {
+  background: #007BFF;
+  color: white;
+  padding: 15px;
+}
+header a {
+  color: yellow;
+  text-decoration: none;
+  font-weight: bold;
+}
+h2 { color: #004080; margin-top: 20px; }
+h3 { color: #ff4500; margin: 10px 0; }
+.produtos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  margin: 20px;
+}
+.card {
+  background: white;
+  border-radius: 12px;
+  padding: 15px;
+  width: 250px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+.preco {
+  margin: 8px 0;
+  font-size: 1.1em;
+}
+.btn {
+  display: inline-block;
+  padding: 10px 15px;
+  margin-top: 10px;
+  background: #007BFF;
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: bold;
+}
+.btn:hover { background: #0056b3; }
+footer {
+  background: #007BFF;
+  color: white;
+  padding: 10px;
+  margin-top: 20px;
+}
+@media (max-width: 768px) {
+  .produtos { flex-direction: column; align-items: center; }
+}
+</style>
 </head>
 <body>
-  <header>
-    <h1><i class="fas fa-fire"></i> Moriyah GV Gás</h1>
-    <p>📱 Peça seu gás agora pelo WhatsApp: 
-      <a href="https://wa.me/5531981043000" style="color: yellow; text-decoration: none;">
-        <strong>31 98104-3000</strong>
-      </a>
-    </p>
-  </header>
 
-  <div class="logo-container">
-    <img class="logo" src="https://example.com/logo.png" alt="Moriyah GV Gás">
-  </div>
+<header>
+  📱 Peça agora pelo WhatsApp: 
+  <a href="https://wa.me/5531981043000">31 98104-3000</a>
+</header>
 
-  <h2>Nossos Botijões</h2>
-  <h3>🔥 Promoção da Semana 🔥</h3>
+<h2>Nossos Produtos</h2>
+<h3>🔥 Promoção da Semana 🔥</h3>
 
-  <div class="produtos">
-    <div class="card">
-      <h3><i class="fas fa-gas-pump"></i> Liquigás 13kg</h3>
-      <img src="https://www.legitimogas.com.br/wp-content/uploads/2021/04/botijao_de_gas_liquigas_13kg.jpg" alt="Botijão Liquigás 13kg">
-      <p class="preco">💵 Dinheiro/Pix: <b>R$ 104,99</b></p>
-      <p class="preco">💳 Cartão: <b>R$ 109,99</b></p>
-      <a class="btn" href="https://wa.me/5531981043000?text=Quero%20comprar%20um%20Liquigás%2013kg">
-        <i class="fab fa-whatsapp"></i> Pedir agora
-      </a>
-    </div>
+<div class="produtos">
 
-    <div class="card">
-      <h3><i class="fas fa-fire"></i> Supergás Brás 13kg</h3>
-      <img src="https://www.supergasbras.com.br/wp-content/uploads/2021/10/botijao-p13-supergasbras.jpg" alt="Botijão Supergás Brás 13kg">
-      <p class="preco">💵 Dinheiro/Pix: <b>R$ 115,00</b></p>
-      <p class="preco">💳 Cartão: <b>R$ 120,00</b></p>
-      <a class="btn" href="https://wa.me/5531981043000?text=Quero%20comprar%20um%20Supergás%20Brás%2013kg">
-        <i class="fab fa-whatsapp"></i> Pedir agora
-      </a>
-    </div>
-  </div>
+<div class="card">
+  <h3>⛽ Liquigás 13kg</h3>
+  <p class="preco">💵 Dinheiro/Pix: <b>R$ 104,99</b></p>
+  <p class="preco">💳 Cartão: <b>R$ 109,99</b></p>
+  <a class="btn" href="https://wa.me/5531981043000?text=Quero%20comprar%20um%20Liquigás%2013kg">➡️ Pedir agora</a>
+</div>
 
-  <div class="info">
-    <h3><i class="fas fa-info-circle"></i> Informações Importantes</h3>
-    <p>⛟ <span class="destaque">Entregas rápidas</span> em toda a região</p>
-    <p>⏰ <span class="destaque">Horário de funcionamento:</span></p>
-    <p>Segunda a Sexta: 7h30 às 21h</p>
-    <p>Sábado: 7h30 às 19h</p>
-    <p>Domingo: 7h30 às 14h</p>
-    <p>📍 <span class="destaque">Endereço:</span> Rua Pedra Negra, 28 - Santa Maria, Vespasiano</p>
-  </div>
+<div class="card">
+  <h3>🔥 Supergás Brás 13kg</h3>
+  <p class="preco">💵 Dinheiro/Pix: <b>R$ 115,00</b></p>
+  <p class="preco">💳 Cartão: <b>R$ 120,00</b></p>
+  <a class="btn" href="https://wa.me/5531981043000?text=Quero%20comprar%20um%20Supergás%2013kg">➡️ Pedir agora</a>
+</div>
 
-  <a class="whatsapp-float" href="https://wa.me/5531981043000">
-    <i class="fab fa-whatsapp"></i> Peça pelo WhatsApp
-  </a>
+<div class="card">
+  <h3>💧 Galão de Água Ingá</h3>
+  <p class="preco">💵 Dinheiro/Pix: <b>R$ 14,99</b></p>
+  <p class="preco">💳 Cartão: <b>R$ 17,99</b></p>
+  <a class="btn" href="https://wa.me/5531981043000?text=Quero%20comprar%20um%20Galão%20de%20Água%20Ingá">➡️ Pedir agora</a>
+</div>
 
-  <footer>
-    <p>🎉 Obrigado por escolher a <b>Moriyah GV Gás</b>!</p>
-    <p>Estamos sempre aqui para você ❤</p>
-    <p>© 2023 Moriyah GV Gás - Todos os direitos reservados</p>
-  </footer>
+</div>
+
+<footer>
+  🎉 Obrigado por escolher a Moriyah GV Gás!<br>
+  Estamos sempre aqui para você ❤
+  <p>📍 Rua Pedra Negra, 28 - Santa Maria, Vespasiano</p>
+  <p>⏰ Seg-Sex: 7h30 às 21h | Sáb: 7h30 às 19h | Dom: 7h30 às 14h</p>
+</footer>
+
 </body>
 </html>
