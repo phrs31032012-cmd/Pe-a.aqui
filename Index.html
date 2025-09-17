@@ -4,106 +4,189 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Moriyah GV Gás</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <style>
-    body {
-      font-family: Arial, sans-serif;
+    * {
       margin: 0;
-      background-color: #f0f8ff;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      background: linear-gradient(to bottom, #f0f8ff, #e1f5fe);
       color: #333;
       text-align: center;
+      line-height: 1.6;
     }
+    
     header {
-      background-color: #007BFF;
+      background: linear-gradient(to right, #007BFF, #0056b3);
       color: white;
-      padding: 15px;
+      padding: 20px;
       font-size: 1.2em;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     }
+    
+    .logo-container {
+      display: flex;
+      justify-content: center;
+      margin: 15px 0;
+    }
+    
+    .logo {
+      max-width: 200px;
+      height: auto;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+    
     h2 {
       color: #004080;
-      margin-top: 20px;
+      margin: 20px 0 10px;
+      font-size: 2em;
+      text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
     }
+    
     h3 {
       color: #ff4500;
-      margin-top: -10px;
+      margin: 0 0 20px;
+      font-size: 1.5em;
     }
+    
     .produtos {
       display: flex;
       justify-content: center;
       flex-wrap: wrap;
       margin: 20px;
-      gap: 20px;
+      gap: 30px;
     }
+    
     .card {
       background: white;
-      border-radius: 12px;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-      padding: 15px;
-      width: 250px;
+      border-radius: 15px;
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+      padding: 20px;
+      width: 300px;
+      transition: transform 0.3s ease;
     }
+    
+    .card:hover {
+      transform: translateY(-5px);
+    }
+    
     .card img {
       width: 100%;
-      height: auto;
+      height: 180px;
+      object-fit: cover;
       border-radius: 10px;
+      margin-bottom: 15px;
+      border: 2px solid #007BFF;
     }
+    
     .preco {
-      margin: 10px 0;
-      font-size: 1.1em;
+      margin: 15px 0;
+      font-size: 1.2em;
+      color: #2c3e50;
     }
+    
     .btn {
       display: inline-block;
-      padding: 10px 15px;
-      margin-top: 10px;
+      padding: 12px 20px;
+      margin-top: 15px;
       background: #007BFF;
       color: white;
       text-decoration: none;
       border-radius: 8px;
       font-weight: bold;
+      transition: background 0.3s;
     }
+    
     .btn:hover {
       background: #0056b3;
+      transform: scale(1.05);
     }
+    
+    .info {
+      background: white;
+      border-radius: 15px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      padding: 20px;
+      margin: 30px auto;
+      max-width: 800px;
+    }
+    
+    .info h3 {
+      color: #004080;
+      margin-bottom: 15px;
+    }
+    
+    .info p {
+      margin: 10px 0;
+      font-size: 1.1em;
+    }
+    
+    .destaque {
+      color: #ff4500;
+      font-weight: bold;
+    }
+    
     footer {
-      background: #007BFF;
+      background: linear-gradient(to right, #007BFF, #0056b3);
       color: white;
-      padding: 10px;
-      margin-top: 20px;
+      padding: 20px;
+      margin-top: 30px;
+    }
+    
+    .whatsapp-float {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background: #25D366;
+      color: white;
+      border-radius: 50px;
+      padding: 15px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+      z-index: 100;
+      display: flex;
+      align-items: center;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    
+    .whatsapp-float i {
+      font-size: 24px;
+      margin-right: 10px;
+    }
+    
+    @media (max-width: 768px) {
+      .produtos {
+        flex-direction: column;
+        align-items: center;
+      }
+      
+      .card {
+        width: 90%;
+        max-width: 350px;
+      }
+      
+      header {
+        font-size: 1em;
+        padding: 15px;
+      }
     }
   </style>
 </head>
 <body>
   <header>
-    📱 Peça seu gás agora pelo WhatsApp: 
-    <a href="https://wa.me/5531981043000" style="color: yellow; text-decoration: none;">
-      31 98104-3000
-    </a>
+    <h1><i class="fas fa-fire"></i> Moriyah GV Gás</h1>
+    <p>📱 Peça seu gás agora pelo WhatsApp: 
+      <a href="https://wa.me/5531981043000" style="color: yellow; text-decoration: none;">
+        <strong>31 98104-3000</strong>
+      </a>
+    </p>
   </header>
 
-  <h2>Nossos Botijões</h2>
-  <h3>🔥 Promoção da Semana 🔥</h3>
-
-  <div class="produtos">
-    <div class="card">
-      <h3>Liquigás 13kg</h3>
-      <img src="https://i.ibb.co/ZBJxHSG/liquigas.jpg" alt="Botijão Liquigás 13kg">
-      <p class="preco">💵 Dinheiro/Pix: <b>R$ 104,99</b></p>
-      <p class="preco">💳 Cartão: <b>R$ 109,99</b></p>
-      <a class="btn" href="https://wa.me/5531981043000?text=Quero%20comprar%20um%20Liquigás%2013kg">➡️📱 Pedir agora</a>
-    </div>
-
-    <div class="card">
-      <h3>Supergás Brás 13kg</h3>
-      <img src="https://i.ibb.co/bPv6Ky5/supergas.jpg" alt="Botijão Supergás Brás 13kg">
-      <p class="preco">💵 Dinheiro/Pix: <b>R$ 115,00</b></p>
-      <p class="preco">💳 Cartão: <b>R$ 120,00</b></p>
-      <a class="btn" href="https://wa.me/5531981043000?text=Quero%20comprar%20um%20Supergás%20Brás%2013kg">➡️📱 Pedir agora</a>
-    </div>
-  </div>
-
-  <footer>
-    🎉 Obrigado por escolher a <b>Moriyah GV Gás</b>!  
-    <br>Estamos sempre aqui para você ❤
-    <p>📍 Rua Pedra Negra, 28 - Santa Maria, Vespasiano</p>
-    <p>⏰ Seg-Sex: 7h30 às 21h | Sáb: 7h30 às 19h | Dom: 7h30 às 14h</p>
-  </footer>
-</body>
-</html>
+  <div class="logo-container">
+    <img class="logo" src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAwIiBoZWlnaHQ9IjEwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iMjAwIiBoZWlnaHQ9IjEwMCIgZmlsbD0iIzAwNTZiMyIgcng9IjEwIi8+PHRleHQgeD0iMTAwIiB5PSI1MCIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjE4IiBmaWxsPSJ3aGl0ZSIgdGV4dC1hbmNob3I
