@@ -9,22 +9,29 @@ body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  background: #f0f8ff;
+  background: linear-gradient(to bottom, #f0f8ff, #d0e7ff);
   color: #333;
   text-align: center;
 }
 header {
   background: #007BFF;
   color: white;
-  padding: 15px;
+  padding: 20px;
+  font-size: 1.2em;
 }
 header a {
   color: yellow;
   text-decoration: none;
   font-weight: bold;
 }
-h2 { color: #004080; margin-top: 20px; }
-h3 { color: #ff4500; margin: 10px 0; }
+h2 {
+  color: #004080;
+  margin-top: 20px;
+}
+h3 {
+  color: #ff4500;
+  margin: 10px 0;
+}
 .produtos {
   display: flex;
   flex-wrap: wrap;
@@ -34,10 +41,15 @@ h3 { color: #ff4500; margin: 10px 0; }
 }
 .card {
   background: white;
-  border-radius: 12px;
-  padding: 15px;
-  width: 250px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  border-radius: 15px;
+  padding: 20px;
+  width: 260px;
+  box-shadow: 0 6px 12px rgba(0,0,0,0.2);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 18px rgba(0,0,0,0.3);
 }
 .preco {
   margin: 8px 0;
@@ -47,17 +59,20 @@ h3 { color: #ff4500; margin: 10px 0; }
   display: inline-block;
   padding: 10px 15px;
   margin-top: 10px;
-  background: #007BFF;
+  background: #28a745;
   color: white;
   text-decoration: none;
-  border-radius: 8px;
+  border-radius: 10px;
   font-weight: bold;
+  transition: background 0.3s;
 }
-.btn:hover { background: #0056b3; }
+.btn:hover {
+  background: #1e7e34;
+}
 footer {
   background: #007BFF;
   color: white;
-  padding: 10px;
+  padding: 15px 10px;
   margin-top: 20px;
 }
 @media (max-width: 768px) {
@@ -77,26 +92,26 @@ footer {
 
 <div class="produtos">
 
-<div class="card">
-  <h3>⛽ Liquigás 13kg</h3>
-  <p class="preco">💵 Dinheiro/Pix: <b>R$ 104,99</b></p>
-  <p class="preco">💳 Cartão: <b>R$ 109,99</b></p>
-  <a class="btn" href="https://wa.me/5531981043000?text=Quero%20comprar%20um%20Liquigás%2013kg">➡️ Pedir agora</a>
-</div>
+  <div class="card">
+    <h3>⛽ Liquigás 13kg</h3>
+    <p class="preco">💵 Dinheiro/Pix: <b>R$ 104,99</b></p>
+    <p class="preco">💳 Cartão: <b>R$ 109,99</b></p>
+    <a class="btn" href="https://wa.me/5531981043000?text=Quero%20comprar%20um%20Liquigás%2013kg">➡️ Pedir agora</a>
+  </div>
 
-<div class="card">
-  <h3>🔥 Supergás Brás 13kg</h3>
-  <p class="preco">💵 Dinheiro/Pix: <b>R$ 115,00</b></p>
-  <p class="preco">💳 Cartão: <b>R$ 120,00</b></p>
-  <a class="btn" href="https://wa.me/5531981043000?text=Quero%20comprar%20um%20Supergás%2013kg">➡️ Pedir agora</a>
-</div>
+  <div class="card">
+    <h3>🔥 Supergás Brás 13kg</h3>
+    <p class="preco">💵 Dinheiro/Pix: <b>R$ 115,00</b></p>
+    <p class="preco">💳 Cartão: <b>R$ 120,00</b></p>
+    <a class="btn" href="https://wa.me/5531981043000?text=Quero%20comprar%20um%20Supergás%2013kg">➡️ Pedir agora</a>
+  </div>
 
-<div class="card">
-  <h3>💧 Galão de Água Ingá</h3>
-  <p class="preco">💵 Dinheiro/Pix: <b>R$ 14,99</b></p>
-  <p class="preco">💳 Cartão: <b>R$ 17,99</b></p>
-  <a class="btn" href="https://wa.me/5531981043000?text=Quero%20comprar%20um%20Galão%20de%20Água%20Ingá">➡️ Pedir agora</a>
-</div>
+  <div class="card">
+    <h3>💧 Galão de Água Ingá</h3>
+    <p class="preco">💵 Dinheiro/Pix: <b>R$ 14,99</b></p>
+    <p class="preco">💳 Cartão: <b>R$ 17,99</b></p>
+    <a class="btn" href="https://wa.me/5531981043000?text=Quero%20comprar%20um%20Galão%20de%20Água%20Ingá">➡️ Pedir agora</a>
+  </div>
 
 </div>
 
